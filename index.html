@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="script/js">
+
+      var user = {};
+      user.firstName = "Sam";
+      user.boyfriend = "Drew";
+      user.boyfriend.girlfriend = "Sam";
+      user.status = "in-flight"
+      window.user = user;
+
+      window.firstNameVal = "sam";
+
+      console.writeLine(user);
+    </script>
+    <style>
+      #container {
+        display: inline-block;
+        margin-left: 35%;
+        width: 200px;
+      }
+      #title {
+        color: green;
+        font-size: 50px;
+      }
+      .input {
+        height: 50px;
+        width: 200px;
+        border: 1px solid black;
+      }
+      .button {
+        height: 50px;
+        width: 200px;
+        border: 1px solid black;
+        background-color: green;
+        color: white;
+      }
+    </style>
+    <script src="./scripts.js"></script>
+    <title>Sam's page</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1 id="title">Hello</h1>
+      <h3>What is your name?</h3>
+      <label>First name: </label> <input class="input" id="firstName" name="firstName" type="text" />
+      <button class="button" onclick="getElementById('title').innerText = window.firstNameVal">Click Me!</button>
+    </div>
+  </body>
+</html>
